@@ -1,10 +1,10 @@
 
-<!------------------------------------------------------------  Included language translation  ---------------------------------------------------------->
+<!----------------------------------------------------------------------  Included language translation  ------------------------------------------------------------------->
 <?php
     require "php/core/init.php";
 ?>
 
-<!------------------------------------------------------------------  HMTL FULL BODY  ---------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------  HMTL FULL BODY ----------------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +13,11 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="Description" content="Put your description here.">
 
             <!-- StyleSheet css  -->
             <link rel="stylesheet" href="CSS/new.css">
-            <link rel="stylesheet" type="text/css" href="timeLine.css">
 
-
-        
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script|Roboto'>
@@ -27,23 +25,23 @@
             <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            
             <!-- Portfolio font-awesonme boostrap cdn link -->
             <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'> 
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            
             <!-- JavaScript link -->
             <script src="myJS.js"></script>
             
-                                                <title> MY PORTFOLIO </title>
+                                             <title> MY PORTFOLIO </title>
 </head>
 <body>  
-  
-
-<!-------------------------------------------------------------------  Main Header  ---------------------------------------------------------------------------> 
+<!--------------------------------------------------------------------------------- Main Header  --------------------------------------------------------------------------------> 
      	
     <section class="fa-nav">
 		
-            <nav class="navbar navbar-expand-md navbar-light bg-light p-2 mb-1 bg-secondary text-white" class="fixed">
-                <a class="logo-brand" class="navbar-brand" href="#"><i>Naji</i><sup>Baddou</sup></a>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light p-2 mb-1 bg-secondary text-white" class="fixed">
+                <a href="#Home" class="logo-brand" class="navbar-brand"><i>Naji</i><sup>Baddou</sup></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,16 +53,13 @@
                         <li class="nav-item">
                         <a class="nav-link" href="#about">ABOUT</a>
                         <li class="nav-item">
-                        <a class="nav-link" href="#services">Service</a> 
+                        <a class="nav-link" href="#services">SERVICE</a> 
                         </li>
                         <li class="nav-item">
                         <a class="nav-link " href="#Portfolio" tabindex="-1" aria-disabled="true">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="#contact">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="#Admin">ADMIN</a>
                         </li>
                 </ul>
             </div>  
@@ -82,19 +77,19 @@
     
         
 
-<!---------------------------------------------------------------------  hero image   ------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------ hero image ------------------------------------------------------------------------------>
 
 <section id="Home" class="hero-general">
 
        <div >
            <div class="hero-content">
-               <img src="img/naji.jpg" class="img">
+               <img src="img/naji-min.jpg" alt="Smiley face" class="img">
                  <!-- hi! i'm naji -->
                     <div class="demo">
                       <div> <h1 style="color:#fff;"><?= $lang[$_SESSION['language']]['greet']?></h1> </div>
                       </div>
                      <!-- web design/ web development -->
-                      <h3 id="hero-text-animation" style="color:rgb(121, 121, 121);"><?= $lang[$_SESSION['language']]['firstinfo']?></h3>
+                      <h3 id="hero-text-animation" style="#fffff;"><?= $lang[$_SESSION['language']]['firstinfo']?></h3>
                       <!-------------------Download button------------------->
                     
            </div>
@@ -103,7 +98,7 @@
          
 </section>
  
-<!-------------------------------------------------------------------  ABOUT ME  ------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------  ABOUT ME  -------------------------------------------------------------------------------------->
        <section id="about">
         <div class="container">
             <div class="row">
@@ -126,10 +121,10 @@
                           <ul class="about-social">
                                  <!--Social icons for the about section-->
                                 <!--These icons are font-awesome icons and more can be looked up at https://fontawesome.com/icons?d=gallery-->
-                                    <li><a href="http://www.google.com"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="http://www.google.com" aria-label="linkedin"><i class="fab fa-linkedin"></i></a></li>
                                 <!--Simply replace the google link with your social media link-->
-                                <li><a href="http://www.google.com"><i class="far fa-envelope"></i></a></li>
-                                    <li><a href="http://www.google.com"><i class="fab fa-github"></i></a></li> 
+                                <li><a href="http://www.google.com" aria-label="envelope"><i class="far fa-envelope"></i></a></li>
+                                    <li><a href="http://www.google.com" aria-label="github"><i class="fab fa-github"></i></a></li> 
                          </ul>
                    </div>
             </div>
@@ -153,21 +148,21 @@
                                 <div class="skill-progress-container" >
                                     <!-- Web Design -->
                                     <p><?=  $lang[$_SESSION['language']]['web des'];?></p>
-                                    <div class="skill-bar">
-                                            <div class="progress" style="height:7px;">
-                                                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>                                    </div>
+                                <div class="skill-bar">
+                                    <div class="progress" style="height:7px;">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>                                    
+                                    </div>
                                 </div>
                                     
                                 <div class="skill-progress-container">
                                     <!-- Management -->
                                     <p><?=  $lang[$_SESSION['language']]['manage'];?></p>
-                                    <div class="skill-bar">
-                                            <div class="progress" style="height:7px;">
-                                         <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                
+                                <div class="skill-bar">
+                                    <div class="progress" style="height:7px;">
+                                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>                    
                                 </div>
-                            </div>
+                               </div>
                                 
                             <div class="education">
                                     <!-- My Education -->
@@ -186,36 +181,32 @@
                 </div>
             </div>
        </section>
-<!-- --------------------------------------------------------------  Timeline -------------------------------------------- -->
-     
-     
-<!----------------------------------------------------------------   My Services ----------------------------------------------------------------->
+         
+<!----------------------------------------------------------------------------------  My Services --------------------------------------------------------------------------------------->
+
 <section class="services pt-100 pb-50" id="services">
          <div class="container">
             <div class="row">
                <div class="col-xl-6 mx-auto text-center"  class="ml10"  class="letters" >
                   <div class="section-title mb-50"  class="text-wrapper" >
-                     <p>what i can do</p> 
                      <h4>my <span>services</span></h4>
                   </div>
                </div>
             </div>
             
-  
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
         <div class="row">
-               <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
                   <div class="single-service">
                      <i class="fa fa-laptop"></i>
                      <!-- Web Design -->
                      <h4><?=  $lang[$_SESSION['language']]['web design'];?> </h4>
                      <!-- i can manage creating a simple web design based on your thoughts -->
-                     <p><?=  $lang[$_SESSION['language']]['design'];?></p>
-                  </div>
-                </div>
+                    <p><?=  $lang[$_SESSION['language']]['design'];?></p>
+            </div>
+        </div>
 
         <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
@@ -271,8 +262,9 @@
             </div>
          </div>
 </section>
-<!----------------------------------------------------------------   PORTFOLIO   ----------------------------------------------------------------->
-    <!-- <iframe id="Portfolio" src="ok/index.html" frameborder="0" style="width:110%; height: 450px;"></iframe>          -->
+
+<!--------------------------------------------------------------------------------  PORTFOLIO  ---------------------------------------------------------------------------------------------->
+    
 <div id="Portfolio" class="container">
 <div class="row">
                <div class="col-xl-6 mx-auto text-center">
@@ -285,52 +277,52 @@
        
         <div class="col-md-4 col-sm-6">
             <div class="box">
-                <img src="img/youcode.PNG" alt="">
+                <img src="img/youcode-min (1).PNG" alt="Smiley face">
                 <div class="box-content">
                     <h3 class="title">Site Youcode</h3>
                     <span class="post">Web developer</span>
                     <ul class="icon">
-                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" aria-label="gitlab"><i class="fab fa-gitlab"></i></a></li>
+                        <li><a href="#" aria-label="github"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-sm-6">
             <div class="box">
-                <img src="img/b.PNG" alt="">
+                <img src="img/b-min.PNG" alt="Smiley face">
                 <div class="box-content">
                     <h3 class="title">SLACK</h3>
                     <span class="post">Web developer</span>
                     <ul class="icon">
-                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"  aria-label="gitlab"><i class="fab fa-gitlab"></i></a></li>
+                        <li><a href="#" aria-label="github" ><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-sm-6">
             <div class="box">
-                <img src="img/clock.PNG" width="30px" height="30px" alt="">
+                <img src="img/clock-min.PNG" width="30px" height="30px" alt="Smiley face">
                 <div class="box-content">
                     <h3 class="title">Clock</h3>
                     <span class="post"></span>
                     <ul class="icon">
-                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" aria-label="gitlab"><i class="fab fa-gitlab"></i></a></li>
+                        <li><a href="#" aria-label="github"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-sm-6">
             <div class="box">
-                <img src="img/d.PNG" width="30px" height="30px" alt="">
+                <img src="img/d-min.PNG" width="30px" height="30px" alt="Smiley face">
                 <div class="box-content">
                     <h3 class="title">Home Page</h3>
                     <span class="post"></span>
                     <ul class="icon">
-                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" aria-label="github"><i class="fab fa-gitlab"></i></a></li>
+                        <li><a href="#" aria-label="github"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -338,13 +330,8 @@
     </div>
 </div>
 
-<!---------------------------------------------------------CONTACT SECTION-------------------------------------------------------------->
-<!-- <?php
-    // if (
-    // mail('aadambaddou123@gmail.com','','first',' '))
-    // echo "msg send";
+<!------------------------------------------------------------------------------  CONTACT SECTION  ------------------------------------------------------------------------------------>  
     
-?>   -->
     <?php
 if (isset($_POST['submit']))
 {
@@ -361,87 +348,62 @@ if (isset($_POST['submit']))
         });
     });</script>
 
-   <section id="contact">
-        <div class="container">
-            <div class="row">
-               <div class="col-xl-6 mx-auto text-center">
-                  <div class="section-titles mb-50"  class="section-title" >
+<section id="contact">
+    <div class="container" class="row">
+        <div class="row">
+            <div class="col-xl-6 mx-auto text-center">
+                <div class="section-titles mb-50"  class="section-title" >
                     <h4>Contact <span  >Me</span></h4>
               </div>
-         </div>
+        </div>
             
-            <div class="row center-xs center-sm center-md center-lg">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="row center-xs center-sm center-md center-lg ">
+                <div class="col-md-7">
                     <div class="contact-info">
                         
-                        <div class="contact-block">
-                            <i class="fas fa-mobile-alt"></i>
-                            <div class="contact-text">
-                                <p> <?= $lang[$_SESSION['language']]['call']?></p>
-                                <p>+212-629689143</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-block">
-                            <i class="far fa-envelope"></i>
-                            <div class="contact-text">
-                                <p>Email</p>
-                                <p>najibaddou233@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-block">
-                            <i class="fas fa-location-arrow"></i>
-                            <div class="contact-text">
-                                <p><?= $lang[$_SESSION['language']]['address']?></p>
-                                <p>QU SMARA RUE TANSIFT N°10</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                    <form id="contact-form" method="POST">
+                    <div class="span8">
+        	<iframe title="ifram" width="100%" height="350" frameborder="1" scrolling="no" marginheight="" marginwidth="" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13498.247752107027!2d-8.51877605367431!3d32.242959713836086!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1558625676819!5m2!1sfr!2sma" alt="Smiley face"></iframe>
+    	</div> 
+             </div>
+                 </div>
+                <div class="col-md-5">
+                    <form id="contact-form" method="POST"> 
                         <div class="field">
-                        <?= $lang[$_SESSION['language']]['name']?><br>
+                            <!-- Name -->
+                        <label for="name"><?= $lang[$_SESSION['language']]['name']?></label><br>
                             <input type="text" name='name' id="name"  placeholder="name" required>
                         </div>
                         <div class="field">
-                            Email<br>
-                            <input type="text" name='email' id="email"  placeholder="name@gmail.com" required>
+                            <label for="email"> Email </label>
+                            <br>
+                            <input type="email" class="form-control" id="inputEmail4" name='email' id="email"  placeholder="name@gmail.com" required>
                         </div>
                         <div class="field">
-                        <?= $lang[$_SESSION['language']]['subject']?><br>
+                        
+                          <!-- Subject -->
+                        <label for="email"><?= $lang[$_SESSION['language']]['subject']?></label>
+                        <br>
                             <input type="text" name='Subject'id="subject"  placeholder="Your Subject" required>
                         </div>
                         <div class="field">
-                        <?= $lang[$_SESSION['language']]['Message']?><br>
+                          <label for="message">
+                              <!-- Message -->
+                             <?= $lang[$_SESSION['language']]['Message']?>
+                          </label>
+                        <br>
                             <textarea id="message" name="message" rows="10" cols="75" required placeholder="write somthing."></textarea>
                         </div>
                         <div class="field">
-                            <input type="submit" name='submit'id="contact-submit" value="Send"><span id="status"></span>
-                        </div>
+                          <input type="submit" class="btn btn-outline-danger btn-block" id="contact-submit" type="submit" name='submit' value="Send"><span id="status"></span> 
+                        </div>  
                     </form>
-                </div>
-            
+                </div>           
             </div>
-        </div> 
-       
-             <!-- <div  id="alert" class="alert alert-primary" role="alert">
-             message envoyer!
-           </div> -->
-         
-        
-        <div class="container">
-	<div class="row-fluid">
-        <div class="span8">
-        	<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13498.247752107027!2d-8.51877605367431!3d32.242959713836086!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1558625676819!5m2!1sfr!2sma"></iframe>
-    	</div> 	
-    </div>
-</div>
-    </section>
+        </div>
+    </div> 
+</section>
 
-<!----------------------------------------------------------FOOTER SECTION------------------------------------------------------------------>
+<!-------------------------------------------------------------------------- FOOTER SECTION  ------------------------------------------------------------------>
 
 <!-- Footer -->
 <footer class="page-footer font-small mdb-color lighten-3 pt-4">
@@ -472,22 +434,22 @@ if (isset($_POST['submit']))
         <ul class="list-unstyled">
           <li>
             <p>
-              <a href="#Portfolio">PROJECTS</a>
+              <a href="#Portfolio" aria-label="Portfolio">PROJECTS</a>
           </p>
           </li>
           <li>
             <p>
-              <a href="#about">ABOUT Me</a>
+              <a href="#about" aria-label="about">ABOUT Me</a>
             </p>
           </li>
           <li>
             <p>
-              <a href="#contact">contact</a>
+              <a href="#contact" aria-label="contact">contact</a>
             </p>
           </li>
           <li>
             <p>
-              <a href="#Home">Home </a>
+              <a href="#Home" aria-label="Home">Home </a>
           </p>
         </ul>
 
@@ -530,17 +492,17 @@ if (isset($_POST['submit']))
 
         <!-- linkedIn -->
         <ul class="icon">
-             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+             <li><a href="#" aria-label="linkedin"><i class="fab fa-linkedin"></i></a></li>
               
          </ul>
         <!-- gitlab -->
         <ul class="icon">
-            <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
+            <li><a href="#" aria-label="gitlab"><i class="fab fa-gitlab"></i></a></li>
          
         </ul>
         <!-- github -->
         <ul class="icon">
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"aria-label="github"><i class="fab fa-github"></i></a></li>
           
          </ul>
         
@@ -553,11 +515,9 @@ if (isset($_POST['submit']))
     <!-- Grid row -->
 
   </div>
-  <!-- Footer Links -->
-  
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3"> YOUCODE © 2018 Copyright: <span>MADE WITH LOVE</span>
-    <a href=""> Youcode Students</a><div>&&</div><a href="">Naji Baddou</a>All Rights Reservces
+    <a href="#" aria-label="Youcode"> Youcode Students</a><div>&&</div><a href="#" aria-label="naji baddou">Naji Baddou</a>All Rights Reservces
   </div>
   <!-- Copyright -->
 
@@ -565,16 +525,16 @@ if (isset($_POST['submit']))
 <!-- Footer -->
   
   <section class="culom">
-            <div class="flgs">
-  <a href="http://localhost/portfolio/?lang=en#"><img src="img/united-kingdom.png" class="flag"></a>
-  <a href="http://localhost/portfolio/?lang=fr#"><img src="img/france.png" class="flag"></a>
-  </div>
+       <div class="flgs">
+            <a href="http://localhost/portfolio/?lang=en#" aria-label="Englishflag"><img src="img/united-kingdom-min.png" class="flag" alt="english flag"></a>
+            <a href="http://localhost/portfolio/?lang=fr#" aria-label="Frenchglad"><img src="img/france-min.png" class="flag" alt="french flag"></a>
+      </div>
     
-            </section>
+ </section>
           
 <!-- Footer -->
 
-
+                                                    <!-- JavaScript Links/ Boostrap / Jquery / Cloudflare -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
@@ -602,7 +562,7 @@ if (isset($_POST['submit']))
           scrollTop: target.offset().top
         }, 1000);
         return false;
-      }
+      }  
     }
   });
 });</script>

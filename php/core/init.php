@@ -1,3 +1,4 @@
+<!--  -->
 <?php
  session_start();
     $allowed_lang= array('en','fr');
@@ -39,7 +40,7 @@
     'en' => array(
         // Home 
         'greet'=> 'Hello! i\'m naji',
-        'firstinfo'=>'Web Design/Web Developer',
+        'firstinfo'=>'Dream Big Breams, Do Big Things & Thoughts Will Become Touchable Things',
         'cv' => ' Download My Cv',
         // About 
         'first' =>'>Hi, I\'m',
@@ -85,7 +86,7 @@
     'fr' => array(
         // Home
         'greet'=> 'bonjour! je suis naji',
-        'firstinfo'=>'Web Design / Développeur Web',
+        'firstinfo'=>'Rêver de grands rêves, faire de grandes choses et les pensées deviendront des choses touchable',
         'cv' => 'Télécharger mon CV',
         // About
         'first' =>'>salut, Je suis',
